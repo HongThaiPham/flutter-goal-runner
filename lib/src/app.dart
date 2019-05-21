@@ -14,6 +14,7 @@ class _MyAppState extends State<MyApp> {
     return LoginBlocProvider(
       child: GoalsBlocProvider(
         child: new MaterialApp(
+          debugShowCheckedModeBanner: false,
           title: "Goal Runner",
           theme: new ThemeData(
             accentColor: Colors.white,

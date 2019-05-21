@@ -11,6 +11,7 @@ class StringConstant {
   static const String passwordHint = "Enter Password";
   static const String emailHint = "Enter Email ID";
   static const String submit = "Submit";
+  static const String loginButton = "Login with Google";
   static const String errorMessage = "Please fix all the errors";
   static const String goalListTitle = "Goals List";
   static const String worldTab = "World";

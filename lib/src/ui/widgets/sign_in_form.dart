@@ -67,7 +67,7 @@ class _SignInFormState extends State<SignInForm> {
             return button();
           } else {
             return CircularProgressIndicator(
-              valueColor: new AlwaysStoppedAnimation(Colors.green),
+              valueColor: new AlwaysStoppedAnimation(Colors.white),
             );
           }
         });
@@ -79,21 +79,12 @@ class _SignInFormState extends State<SignInForm> {
         authenticateUser();
       },
       icon: new Icon(Icons.account_circle),
-      label: new Text(StringConstant.submit),
+      label: new Text(StringConstant.loginButton),
       shape:
           RoundedRectangleBorder(borderRadius: new BorderRadius.circular(30.0)),
       textColor: Colors.white,
       color: Colors.blue,
     );
-    return RaisedButton(
-        child: Text(StringConstant.submit),
-        textColor: Colors.white,
-        color: Colors.black,
-        shape: RoundedRectangleBorder(
-            borderRadius: new BorderRadius.circular(30.0)),
-        onPressed: () {
-          authenticateUser();
-        });
   }
 
   void authenticateUser() {
