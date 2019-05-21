@@ -18,7 +18,7 @@ class _MyAppState extends State<MyApp> {
           title: "Goal Runner",
           theme: new ThemeData(
             accentColor: Colors.white,
-            primaryColor: Colors.green,
+            primaryColor: Colors.orange,
           ),
           home: new LoginScreen(),
         ),

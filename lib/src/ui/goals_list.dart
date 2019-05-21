@@ -42,6 +42,7 @@ class _GoalsListState extends State<GoalsList>
         elevation: 0.0,
         bottom: TabBar(
           controller: _tabController,
+          labelColor: Colors.white,
           tabs: <Tab>[
             new Tab(text: StringConstant.worldTab),
             new Tab(text: StringConstant.myTab),
@@ -59,6 +60,8 @@ class _GoalsListState extends State<GoalsList>
   Widget _bottomButtons() {
     if (_tabController.index == 1) {
       return FloatingActionButton(
+          backgroundColor: Colors.orange,
+          foregroundColor: Colors.white,
           child: Icon(Icons.add),
           onPressed: () {
             Navigator.push(
